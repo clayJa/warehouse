@@ -1,0 +1,18 @@
+body, h1, h2, h3, h4, h5, h6, p, a, article {
+	font-family: "Lucida Grande""Arial", Helvetica, 'Hiragino Sans GB', "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+.f15 {
+	font-size: 15px;
+}
+.f21 {
+	font-size: 21px;
+}
+.f25 {
+	font-size: 25px;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}

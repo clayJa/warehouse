@@ -1,0 +1,45 @@
+.body {
+	height: 100%;
+	width: 100%;
+}
+.form-top {
+	padding: 10px 0 5px 25px;
+}
+.form {
+	background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+	border-radius: 15px;
+	border-radius: 15px;
+	color: #f8f8f8;
+	padding: 25px 25px 50px;
+}
+.form-group {
+	padding: 10px;
+}
+.code {
+	display: inline-block;
+	width: 80px;
+	height: 40px;
+	vertical-align: middle;
+	margin: 10px;
+}
+.right {
+	color: green;
+	font-weight: bolder;
+}
+.wrong {
+	color: red;
+	font-weight: bolder;
+}
+.bg {
+	position: relative;
+}
+footer {
+	height: 100px;
+	width: 100%;
+	top: 100%;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+}
+.contact .iconfont {
+	font-size: 50px;
+}

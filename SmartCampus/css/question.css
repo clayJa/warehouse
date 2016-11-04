@@ -1,0 +1,388 @@
+.user-item {
+	float: right;
+}
+.user-item a:hover {
+	text-decoration: none;
+}
+.login-in .iconfont {
+	font-size: 9px;
+	color: orange;
+}
+.user .item {
+	display: inline-block;
+	min-width: 5px;
+	padding: 3px 5px;
+	font-size: 9px;
+	font-weight: bold;
+	line-height: 1;
+	color: white;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-color: orange;
+	border-radius: 10px;
+}
+.user .iconfont {
+	font-size: 9px;
+	color: orange;
+	border: 1px solid orange;
+	border-radius: 50%;
+}
+.top-bg {
+	clear: both;
+	background-color: orange;
+	position: relative;
+	left: -20%;
+	height: 100px;
+	width: 140%;
+}
+.top-bg .logo {
+	position: absolute;
+	left: 20%;
+}
+.top-bg h1 {
+	position: absolute;
+	left: 25%;
+	font-weight: lighter;
+}
+.phrase {
+	position: absolute;
+	left: 25%;
+	top: 65px;
+	color: white;
+}
+.top-bg .iconfont {
+	font-size: 80px;
+	color: white;
+}
+.ask .iconfont {
+	border: 2px solid white;
+	border-radius: 50%;
+}
+.ask-btn a {
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	font-size: 21px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #d14836;
+	color: white;
+}
+.ask-item a {
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	text-align: center;
+}
+.ask-item a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: orange;
+}
+.ask-btn a:hover {
+	text-decoration: none;
+}
+.ask-list, .article-list {
+	border: 1px solid orange;
+	margin: 10px;
+}
+.ask-list .list {
+	margin-top: 10px;
+}
+.count .active {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 21px;
+	margin: 5px;
+	border: 1px solid orange;
+	text-align: center;
+	color: #000;
+	background-color: #fff8df;
+}
+.count .inactive {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 21px;
+	margin: 5px;
+	border: 1px solid orange;
+	text-align: center;
+	background-color: transparent;
+	border-color: #ddd;
+	color: #ddd;
+}
+.ask-list .title {
+	margin: 8px;
+	font-size: 15px;
+}
+.ask-list .time {
+	color: #ccc;
+}
+.ask-list .list:not(:last-child) {
+	border-bottom: 1px solid rgba(255, 153, 0, 0.3);
+}
+.brief .sort, .question-detail .sort {
+	float: right;
+	position: relative;
+	top: -25px;
+}
+.brief .sort a:before, .question-detail .sort a:before {
+	background: transparent none repeat scroll 0 0;
+	border: 1px solid #f1f1f1;
+	border-radius: 2px;
+	content: "";
+	display: block;
+	height: 4px;
+	left: 3px;
+	position: absolute;
+	top: 7px;
+	width: 4px;
+}
+.brief .sort a, .question-detail .sort a {
+	background: transparent none repeat scroll 0 0;
+	border: 1px solid #f1f1f1;
+	border-radius: 12px 0 0 12px;
+	color: #666;
+	display: inline-block;
+	line-height: 1.4;
+	margin-right: 3px;
+	padding: 0 2px 0 12px;
+	position: relative;
+}
+.brief .sort a:hover, .question-detail .sort a:hover {
+	text-decoration: none;
+	background-color: orange;
+}
+.listOfname {
+	position: relative;
+	left: -200px;
+	width: 300px;
+	border-left: 1px solid #f1f1f1;
+}
+.listOfname .top {
+	width: 300px;
+	padding-top: 50px;
+}
+.listOfname .top p:first-child {
+	display: block;
+	padding-left: 10px;
+	background-color: orange;
+	color: white;
+	width: 270px;
+	height: 50px;
+	font-size: 21px;
+	line-height: 50px;
+}
+.listOfname .top .answer-no {
+	float: right;
+}
+
+/*article.css*/
+.article-list .article-img {
+	margin: 8px;
+	height: 105px;
+	width: 160px;
+}
+.article-list .article-img img {
+	height: 105px;
+	width: 160px;
+}
+.article-list .title {
+	position: relative;
+	top: 15px;
+	left: 10px;
+}
+.article-list .title p {
+	font-weight: bolder;
+}
+.article-list .descript {
+	padding-left: 10px;
+}
+.article-list .descript article {
+	height: 65px;
+	overflow: hidden;
+	word-wrap: break-word;
+	position: relative;
+}
+.article-list .descript article::after {
+	content: "...";
+	font-weight: bold;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 0 20px 1px 45px;
+	background: url(http://css88.b0.upaiyun.com/css88/2014/09/ellipsis_bg.png);
+}
+.article-list .descript .author {
+	color: orange;
+	font-weight: bolder;
+	padding: 10px 10px 0 0;
+}
+.article-list .descript .write-time {
+	color: #ccc;
+	font-weight: bold;
+}
+
+/*ask.css*/
+.ask-title {
+	padding-top: 30px;
+}
+.ques-descript {
+	padding-top: 30px;
+}
+.ques-descript .descript {
+	padding: 30px 0 30px 0;
+	color: #f90;
+}
+.tag {
+	padding-top: 20px;
+}
+.submit-ques {
+	margin-top: 50px;
+	float: right;
+}
+.ask-advice {
+	position: relative;
+	left: 30px;
+	width: 300px;
+	border-left: 1px solid #f1f1f1;
+}
+.ask-advice .top {
+	width: 300px;
+	padding-top: 50px;
+	background-color: #ffffe1;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: #333;
+	margin: 20px 0;
+	padding: 15px;
+}
+.ask-advice .top a {
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	text-align: center;
+}
+.ask-advice .top a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: orange;
+}
+.ask-advice .top p:first-child {
+	display: block;
+	padding-left: 10px;
+	color: orange;
+	width: 270px;
+	height: 50px;
+	font-size: 21px;
+	line-height: 50px;
+}
+.ask-advice .top .answer-no {
+	float: right;
+}
+.tip-list {
+	list-style-type: circle;
+	color: #000;
+}
+
+/*question-detail.css*/
+.about-ques span:not(:last-child) {
+	color: #999;
+}
+.about-ques span:last-child {
+	color: orange;
+}
+.ans-top {
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	margin: 20px 0;
+}
+.ans-list {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #f1f1f1;
+}
+.ans-mess .dislike a:hover, .ans-mess .like a:hover {
+	text-decoration: none;
+}
+.ans-mess .dislike .iconfont {
+	color: #ccc;
+	font-size: 18px;
+}
+.ans-mess .dislike .iconfont:hover {
+	color: #ff4500;
+	font-size: 18px;
+}
+.ans-mess .like .iconfont {
+	color: #ff4500;
+	font-size: 16px;
+}
+.ans-content {
+	width: 600px;
+}
+.ans-content article {
+	font-size: 12px;
+}
+.ans-bottom span, .ans-bottom span a {
+	color: #999;
+}
+.submit-ans {
+	float: right;
+}
+
+/*write.css*/
+.select-img {
+	width: 730px;
+	height: 150px;
+	background-color: #e9ebec;
+	position: relative;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+a {
+	text-decoration: none;
+}
+#fileElem {
+	display: none;
+}
+#fileSelect {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 730px;
+	height: 150px;
+	cursor: pointer;
+	line-height: 150px;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+.add-img {
+	display: none;
+	color: gray;
+	font-size: 18px;
+}
+#fileSelect:hover .add-img {
+	display: inline-block;
+}
+#fileSelect .iconfont {
+	font-size: 30px;
+	color: #ccc;
+}
+.obj {
+	width: 730px;
+	height: 150px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+.write-title {
+	padding-top: 30px;
+}

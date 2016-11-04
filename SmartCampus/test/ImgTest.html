@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>image upload</title>
+	<style type="text/css">
+		.select-img{
+			width: 650px;
+			height: 150px;
+			background-color: #e9ebec;
+			position: relative;
+		}
+		a{
+			text-decoration: none;
+		}
+		#fileElem{
+			display: none;
+			
+		}
+		#fileSelect{
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 650px;
+			height: 150px;
+			cursor: pointer;
+		}
+		.add-img{
+			display: none;
+		}
+		#fileSelect:hover .add-img{
+             display: block;
+		}
+		#fileSelect .iconfont{
+            font-size: 23px;
+            color: #ccc;
+		}
+		.obj{
+			width: 800px;
+			height: 100px;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css">
+</head>
+<body>
+
+
+    <div class="select-img" id="preview">
+    	<input type="file" id="fileElem" multiple accept="image/*"  onchange="handleFiles(this.files)">
+        <!-- <a href="#" id="fileSelect"><i class="icon iconfont">&#xe62b;</i></a> -->
+        <div id="fileSelect">
+        <span><i class="icon iconfont">&#xe62b;</i></span>
+        <span class="add-img">添加题图</span>
+        </div>
+    </div>
+
+
+
+    <script>
+        var fileSelect = document.getElementById("fileSelect"),
+		  fileElem = document.getElementById("fileElem");
+
+		fileSelect.addEventListener("click", function (e) {
+		  if (fileElem) {
+		    fileElem.click();
+		  }
+		  e.preventDefault(); // prevent navigation to "#"
+		}, false);
+    	function handleFiles(files) {
+            for (var i = 0; i < files.length; i++) {
+		    var file = files[i];
+		    var imageType = /^image\//;
+		    
+		    if ( !imageType.test(file.type) ) {
+		      continue;
+		    }
+		    
+		    var img = document.createElement("img");
+		    img.classList.add("obj");
+		    img.file = file;
+		    // 假设 "preview" 是将要展示图片的 div
+		    var preview = document.getElementById('preview');
+		    preview.appendChild(img);
+		    
+		    var reader = new FileReader();
+		    reader.onload = (function(aImg) { 
+		      return function(e) { 
+		        aImg.src = e.target.result; 
+		      }; 
+		    })(img);
+		    reader.readAsDataURL(file);
+  }
+}
+    </script>
+</body>
+</html>

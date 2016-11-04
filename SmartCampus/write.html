@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>写文章——技术专区</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/question.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../dist/css/wangEditor.min.css">
+</head>
+<body>
+    <div class="container">
+		<div class="user-item">
+		    <!--  未登录 -->
+	    	<span class="login-in"><a href="login.html" class="user">登录 </a><i class="icon iconfont">&#xe60c;</i></span>
+			 <!-- 已登录 用户名 相关消息数 -->
+			<span class="user"><a href="myspace.html">用户名</a><a href=""><span class="item">4</span></a><a href="">登出 </a><i class="icon iconfont">&#xe607;</i></span>
+		</div>
+        <div class="top-bg">
+        	<span class="logo"><i class="icon iconfont">&#xe60d;</i></span>
+        	<h1>技术研讨区</h1>
+        	<span class="phrase">Solve what you doubt,and improve togeter...</span>
+        </div>
+        <hr>
+        <div class="row">
+	        <h2>Write a New Article</h2>
+            <hr>
+        	<div class="col-sm-12 col-md-12">
+                <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 write-form">
+                    <form action="" role="form">
+                         <!-- 选择封面照片 -->
+                        <div class="form-group">
+                            <div class="select-img" id="preview">
+                            <input type="file" id="fileElem" multiple accept="image/*"  onchange="handleFiles(this.files)">
+                            <div id="fileSelect">
+                            <span id="camera"><i class="icon iconfont">&#xe62b;</i>
+                            <span class="add-img">添加题图</span>
+                            </span>
+                            </div>  
+                        </div>
+                        <!-- 文章标题 -->
+                        <div class="form-group write-title">
+                            <input type="text" class="form-control input-lg" placeholder="请输入标题">
+                        </div>
+                        <!-- 文章正文 -->
+
+                        <div class="form-group article-content">
+                            <!-- 文章正文 article-content -->
+                            <textarea class="form-control" rows="25" id="article-content"></textarea>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-md-offset-10 col-sm-offset-10 form-group">
+                            <button type="submit" class="btn btn-success form-control">发布</button>
+                        </div>
+                    </form> 
+                </div>
+        		
+    </div>
+                
+        	</div>
+        </div>	
+        <!-- end of article form -->
+    </div>
+    
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>	
+	<script src="../dist/js/wangEditor.min.js"></script>
+    <script type="text/javascript">
+        var fileSelect = document.getElementById("fileSelect"),
+          fileElem = document.getElementById("fileElem");
+
+        fileSelect.addEventListener("click", function (e) {
+          if (fileElem) {
+            fileElem.click();
+          }
+          e.preventDefault(); // prevent navigation to "#"
+        }, false);
+        function handleFiles(files) {
+            for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+            var imageType = /^image\//;
+            
+            if ( !imageType.test(file.type) ) {
+              continue;
+            }
+            
+            var img = document.createElement("img");
+            img.classList.add("obj");
+            img.file = file;
+            // 假设 "preview" 是将要展示图片的 div
+            var preview = document.getElementById('preview');
+            var camera = document.getElementById('camera');
+            var pre_img = preview.getElementsByTagName('img');
+            var img_index = preview.childNodes.length - 1;
+            if (pre_img.length > 0) {
+                preview.removeChild(preview.childNodes[img_index]);
+            }
+            preview.appendChild(img);
+            camera.classList.add("hidden");
+            var reader = new FileReader();
+            reader.onload = (function(aImg) { 
+              return function(e) { 
+                aImg.src = e.target.result; 
+              }; 
+            })(img);
+            reader.readAsDataURL(file);
+  }
+}
+    </script>
+	<script type="text/javascript">
+	    var editor = new wangEditor('article-content');
+	    editor.create();
+        editor.$txt.html('<h2><strong>正文从这里开始...</strong></h2>');
+	</script>
+</body>
+</html>

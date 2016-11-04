@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>教师用户注册</title>
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+	</head>
+<body>
+<div class="top">
+    <nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a href="" class="navbar-brand"><i class="fa fa-home fa-fw"></i>校园虚拟社区</a>
+			</div>
+			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li>
+					<a href="question.html">技术交流</a>
+					</li>
+					<li>
+					<a href="#">精彩视频</a>
+					</li>
+					<li>
+					<a href="#">趣味微博</a>
+					</li>
+					<li>
+					<a href="#">校园公告</a>
+					</li>
+					<li>
+					<a href="#contact">创意项目</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+<!-- end of navbar -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 text-center" id="processor">
+			<ol class="processorBox oh list-inline list-unstyled">
+					<li class="current">
+						<div class="step_inner fl">
+							<span class="icon_step">1</span>
+							<h4>填写基本信息</h4>
+						</div>
+					</li>
+					<li>
+						<div class="step_inner">
+							<span class="icon_step">2</span>
+							<h4>完善信息</h4>
+						</div>
+					</li>
+					<li>
+						<div class="step_inner fr">
+							<span class="icon_step">3</span>
+							<h4>完成</h4>
+						</div>
+					</li>
+				</ol>
+				<div class="step_line"></div>
+		</div>
+	</div>
+</div>
+<!-- end of step navbar -->
+<div class="step_1">
+	<div class="container">
+		<div class="row">
+				<div class="col-md-6 col-md-offset-3" role="form">
+					  <div class="form-group">
+				        <label class="custom-label" for="user_email">邮箱</label>
+				        <input class="form-control" id="user_email" name="user[email]" placeholder="example@gmail.com" type="email" value="1150689758@qq.com" />
+				      </div>
+				      <div class="form-group">
+				        <label class="custom-label" for="user_name">真实姓名</label>
+				        <input autofocus="autofocus" class="form-control" id="user_name" name="user[name]" type="text" />
+				      </div>
+				      <div class="form-group">
+				        <label class="custom-label" for="user_school">学校</label>
+				        <input autofocus="autofocus" class="form-control" id="user_name" name="user[name]" type="text" />
+				      </div>
+				      <div class="form-group">
+				        <label class="custom-label" for="user_password">密码</label>
+				        <input class="form-control" id="password" name="user[password]" placeholder="密码" type="password" />
+				      </div>
+				      <div class="form-group">
+				        <label class="custom-label" for="user_password_confirmation">确认密码</label>
+				        <input class="form-control" id="password_confirm" name="user[password_confirmation]" placeholder="确认密码" type="password" />
+				      </div>
+				      <div class="form-group">
+				      <button class="btn btn-success btn-lg btn-block" onclick="step1()">下一步</button>
+				      </div>
+				</div>
+			</div>	
+	</div>
+</div>
+<!-- end of step1 -->
+<div class="step_2 hide">
+	<div class="container">
+		<div class="row">
+				<div class="col-md-6 col-md-offset-3" role="form">
+					  <div class="form-group">
+				        <label class="custom-label" for="user_nickname">昵称</label>
+				        <input class="form-control" id="user_nickname" name="user[nickname]" type="text" />
+				      </div>
+				      <div class="form-group">
+				        <label class="custom-label" for="user_sex">性别</label>
+				        <label class="radio-inline radio-style">
+				        <input type="radio" name="inlineRadioOptions" id="male" value="male">男</label>
+						<label class="radio-inline radio-style">
+						  <input type="radio" name="inlineRadioOptions" id="female" value="male">女</label>
+				      </div>
+				      <div class="form-group">
+				        <label class="custom-label" for="user_id">工号</label>
+				        <input autofocus="autofocus" class="form-control" id="user_id" name="user[id]" type="text" />
+				      </div>
+				      <div class="form-group">
+				        <label class="custom-label" for="user_college">学院</label>
+				        <input autofocus="autofocus" class="form-control" id="user_college" name="user[college]" type="text" />
+				      </div>
+				      <div class="form-group">
+				        <label class="custom-label" for="user_profession">专业</label>
+				        <input class="form-control" id="profession" name="user[profession]" type="text" />
+				      </div>
+				      <div class="form-group">
+				        <label class="custom-label" for="user_grade">职称</label>
+				        <input class="form-control" id="grade" name="user[grade]" type="text" />
+				      </div>
+				      <div class="form-group">
+				        <label class="custom-label" for="user_brief_intro">简介</label>
+				        <textarea class="form-control" id="brief_intro" name="user[brief_intro]" placeholder="介绍一下你自己..." rows="3"></textarea>
+				      </div>
+				      <div class="row">
+				      	<div class="col-md-5 form-group">
+				      		<label class="custom-label" for="user_code">验证码</label>
+				      		<div class="input-group">
+							<input class="form-control" id="inputCode" name="user[code]" />
+					        <span class="input-group-addon" id="ver-code"></span>
+							</div>
+				      	</div>
+				      	<div class="col-md-4">
+				      		<span id="code" class="code"></span>
+				      	</div>
+				      </div>
+				      <div class="form-group">
+				      <button class="btn btn-success btn-lg btn-block" onclick="step2()">提交</button>
+				      </div>
+				</div>
+			</div>	
+	</div>
+</div>
+<!-- end of step-2 -->
+<div class="step_3 hide">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 text-center">
+				<div class="complete"><i class="icon iconfont">&#xe608;</i></div>
+				<p><h1>恭喜你，完成注册</h1></p>
+				<p><h3>获得一把打开社区钥匙</h3></p>
+				<button class="btn btn-success btn-lg btn-block" onclick="step3()">进入社区</button>
+			</div>	
+		</div>
+	</div>
+</div>
+<!-- end of step-3 -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center contact" id="contact">
+				<a href="" target='_blank'><i class="icon iconfont">&#xe600;</i></a>
+				<a href="" target='_blank'><i class="icon iconfont">&#xe601;</i></a>
+				<a href="" target='_blank'><i class="icon iconfont">&#xe602;</i></a>
+                <a href="" target='_blank'><i class="icon iconfont">&#xe603;</i></a>
+                <a href="" target='_blank'><i class="icon iconfont">&#xe605;</i></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 text-center text-muted">
+				<p>Made by Ivan in Shanxi, China. All text, design and video are copyrighted. Copyright © 2016 SmartCampus.com. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/js.KinerCode.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		var inp = document.getElementById('inputCode');
+		var code = document.getElementById('code');
+		var c = new KinerCode({
+        len: 4,//需要产生的验证码长度
+//        chars: ["1+2","3+15","6*8","8/4","22-15"],//问题模式:指定产生验证码的词典，若不给或数组长度为0则试用默认字典
+        chars: [
+            1, 2, 3, 4, 5, 6, 7, 8, 9, 0,
+            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+        ],//经典模式:指定产生验证码的词典，若不给或数组长度为0则试用默认字典
+        question:false,//若给定词典为算数题，则此项必须选择true,程序将自动计算出结果进行校验【若选择此项，则可不配置len属性】,若选择经典模式，必须选择false
+        copy: false,//是否允许复制产生的验证码
+ 
+        randomBg : false,//若选true则采用随机背景颜色，此时设置的bgImg和bgColor将失效
+        inputArea: inp,//输入验证码的input对象绑定【 HTMLInputElement 】
+        codeArea: code,//验证码放置的区域【HTMLDivElement 】
+        click2refresh:true,//是否点击验证码刷新验证码
+        false2refresh:false,//在填错验证码后是否刷新验证码
+        validateEven : "blur",//触发验证的方法名，如click，blur等
+        validateFn : function(result,code){//验证回调函数
+            if(result){
+            	$("#ver-code").empty();
+            	$("#ver-code").append('<i class="icon iconfont right">&#xe606;</i>');
+            }else{
+            	$("#ver-code").empty();
+				$("#ver-code").append('<i class="icon iconfont wrong">&#xe607;</i>');
+            }
+        }
+    });
+	});
+    
+	</script>
+	<script type="text/javascript">
+		function step1() {
+			$(".processorBox li:nth-child(1)").removeClass("current");
+			$(".processorBox li:nth-child(2)").addClass("current");
+			$(".step_1").addClass("hide");
+			$(".step_2").removeClass("hide");
+		}
+		function step2() {
+			$(".processorBox li:nth-child(2)").removeClass("current");
+			$(".processorBox li:nth-child(3)").addClass("current");
+			$(".step_2").addClass("hide");
+			$(".step_3").removeClass("hide");
+			$("footer").css({
+				"position":"fixed",
+                "bottom":0,
+                "left":"10%"
+			});
+		}
+	</script>
+</html>

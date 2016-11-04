@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>提问——技术专区</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/question.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../dist/css/wangEditor.min.css">
+</head>
+<body>
+    <div class="container">
+		<div class="user-item">
+		    <!--  未登录 -->
+	    	<span class="login-in"><a href="login.html" class="user">登录 </a><i class="icon iconfont">&#xe60c;</i></span>
+			 <!-- 已登录 用户名 相关消息数 -->
+			<span class="user"><a href="myspace.html">用户名</a><a href=""><span class="item">4</span></a><a href="">登出 </a><i class="icon iconfont">&#xe607;</i></span>
+		</div>
+        <div class="top-bg">
+        	<span class="logo"><i class="icon iconfont">&#xe60d;</i></span>
+        	<h1>技术研讨区</h1>
+        	<span class="phrase">Solve what you doubt,and improve togeter...</span>
+        </div>
+        <hr>
+        <div class="row">
+	        <h2>Ask a Question</h2>
+        	<div class="col-sm-10 col-md-10">
+        		<div class="row ask-form">
+                  <!-- form begin -->
+	                  <div class="col-sm-10 col-md-10">
+	                  	<form action="" role="form">
+	                  		<div class="form-group ask-title">
+							    <label for="question" class="col-sm-2 col-md-2 control-label">Question</label>
+							    <div class="col-sm-10">
+							    <!-- 问题title -->
+                                <input type="text" class="form-control" id="question" placeholder="你的问题？">
+							</div>
+							<div class="form-group ques-descript">
+							    <label for="descript" class="control-label descript h3">Describe the problem</label>
+							    <!-- 问题详情 description -->
+                                <textarea class="form-control" rows="15" id="question-descript"></textarea>
+                            </div>
+                            <div class="form-group tag">
+							    <label for="tag" class="col-sm-1 col-md-1 control-label">Tags</label>
+							    <div class="col-sm-11">
+							    <!-- 问题标签tag -->
+                                <input type="text" class="form-control" id="question" placeholder="你知道吗？填写准确的标签有助于问题更快解决哦">
+							</div>
+							 <button type="submit" class="btn btn-success submit-ques">Submit your question</button>
+	                  	</form>
+	                  </div>
+                </div>
+        	</div>
+        	<!-- end of left -->
+        	<!-- some advices -->
+        	<div class="col-sm-2 col-md-2 ask-advice">
+        		<div class="col-sm-12 col-md-12 top">
+                    <a href="#">所有问题</a>
+                    <a href="#">未回答的</a>
+                    <a href="myspace.html">我的</a>
+        		</div>
+                <div class="col-sm-12 col-md-12 top">
+                    <p>Advices</p>
+                    <!-- 24小时回答问题积分最多用户 积分数 -->
+                    <ol class="tip-list">
+                        <li><strong>Be courteous</strong> 这里的每个人都有帮助，因为他们喜欢帮助，而不是因为他们的工作。</li>
+                        <li>您在Google上搜索过解决方案吗？</li>
+                        <li>明确具体问题！ 例如“如何更改对话框颜色？ 而不是“我的代码不工作，求大神！”</li>
+                        <li>给你的问题添加合适的标签</li>
+                        <li>如果其他人已回复，请勿删除</li>
+                    </ol>
+                </div>
+        	</div>
+        </div>
+        <!-- end kof advices -->
+    </div>
+    
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>	
+	<script type="text/javascript" src="../dist/js/wangEditor.min.js"></script>
+	<script type="text/javascript">
+	    var editor = new wangEditor('question-descript');
+	    editor.create();
+	</script>
+</body>
+</html>

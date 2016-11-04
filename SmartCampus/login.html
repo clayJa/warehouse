@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户登录</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+	</head>
+<body class="bg-primary">
+<div class="top">
+    <nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a href="" class="navbar-brand">校园虚拟社区</a>
+			</div>
+			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li>
+					<a href="question.html">技术交流</a>
+					</li>
+					<li>
+					<a href="#">精彩视频</a>
+					</li>
+					<li>
+					<a href="#">趣味微博</a>
+					</li>
+					<li>
+					<a href="#">校园公告</a>
+					</li>
+					<li>
+					<a href="#contact">创意项目</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+<!-- end of navbar -->
+<div class="bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-7 col-md-7">
+				<div class="type_strings f21">
+					
+				</div>
+				<div class="description">
+					<p class="f15">突破了单纯的文字交流、功能少和性能差的局面，是一款高度综合性的虚拟社区</p>
+				</div>
+				<div class="img">
+					<img class="img-responsive img-rounded" src="https://classycoffeecream.files.wordpress.com/2012/07/1-university_campus_cartoon.jpg" alt="Smart Campus">
+				</div>
+			</div>
+			<div class="col-sm-5">
+				<div class="form-top">
+					<div class="form-top-left float-left text-center">
+						<h3>登录，开启奇幻之旅...</h3>
+					</div>
+					<div class="form-top-right">
+						
+					</div>
+				</div>
+				<div class="form" role="form">
+					
+					<div class="form-group">
+						<label class="sr-only" for="form-email">Email</label>
+						<input type="email" name="email" placeholder="邮箱..." 
+                            class="form-email form-control input-lg" id="form-email" data-parsley-type="email" data-parsley-trigger="blur" data-parsley-required>
+					</div>
+					<div class="form-group">
+                            <label class="sr-only" for="form-password">Password</label>
+                            <input type="password" name="password" placeholder="密码..." class="form-password form-control input-lg" id="form-password" data-parsley-type="password" data-parsley-trigger="blur" data-parsley-required>
+                    </div>
+                    <div class="row">
+				      	<div class="col-md-5">
+				      		<div class="input-group form-group">
+							<input class="form-control input-lg" id="inputCode" placeholder="验证码" name="user[code]" />
+					        <span class="input-group-addon" id="ver-code"></span>
+							</div>
+				      	</div>
+				      	<div class="col-md-4">
+				      		<span id="code" class="code"></span>
+				      	</div>
+				      </div>
+                    <!-- 学生登录 -->
+                    <button type="submit" onclick='' class="btn btn-lg btn-block sign-up-main btn-success" ><strong>学生登录</strong></button>
+				
+					<span class="float-right"><small>没有账号? <strong><a href="register.html">快速注册</a></strong></small></span>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12">
+						<!-- 教师登录 -->
+						    <button type="submit" onclick='' class="btn btn-lg btn-block teacher-sign-up btn-success" ><strong>教师登录</strong></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center contact" id="contact">
+				<a href="" target='_blank'><i class="icon iconfont">&#xe600;</i></a>
+				<a href="" target='_blank'><i class="icon iconfont">&#xe601;</i></a>
+				<a href="" target='_blank'><i class="icon iconfont">&#xe602;</i></a>
+                <a href="" target='_blank'><i class="icon iconfont">&#xe603;</i></a>
+                <a href="" target='_blank'><i class="icon iconfont">&#xe605;</i></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 text-center text-muted">
+				<p>Made by Ivan in Shanxi, China. All text, design and video are copyrighted. Copyright © 2016 SmartCampus.com. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/js.KinerCode.js"></script>
+    <script type="text/javascript">
+	  $(function(){
+	      $(".type_strings").typed({
+	      	strings: ["<p><strong>校园虚拟社区</strong>给师生提供一个综合性的虚拟环境，<p>师生可以在这里交友，娱乐，分享技术...</p><p>极大地方便校园内各种信息的交流</p><p>加强校园内师生的凝聚力</p>"],
+		    contentType: 'html',
+		    typeSpeed: 0,
+		    showCursor: false
+	      });
+	  });
+	</script>
+	<script type="text/javascript">
+	$(function () {
+		var inp = document.getElementById('inputCode');
+		var code = document.getElementById('code');
+		var c = new KinerCode({
+        len: 4,//需要产生的验证码长度
+//        chars: ["1+2","3+15","6*8","8/4","22-15"],//问题模式:指定产生验证码的词典，若不给或数组长度为0则试用默认字典
+        chars: [
+            1, 2, 3, 4, 5, 6, 7, 8, 9, 0,
+            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+        ],//经典模式:指定产生验证码的词典，若不给或数组长度为0则试用默认字典
+        question:false,//若给定词典为算数题，则此项必须选择true,程序将自动计算出结果进行校验【若选择此项，则可不配置len属性】,若选择经典模式，必须选择false
+        copy: false,//是否允许复制产生的验证码
+ 
+        randomBg : false,//若选true则采用随机背景颜色，此时设置的bgImg和bgColor将失效
+        inputArea: inp,//输入验证码的input对象绑定【 HTMLInputElement 】
+        codeArea: code,//验证码放置的区域【HTMLDivElement 】
+        click2refresh:true,//是否点击验证码刷新验证码
+        false2refresh:false,//在填错验证码后是否刷新验证码
+        validateEven : "blur",//触发验证的方法名，如click，blur等
+        validateFn : function(result,code){//验证回调函数
+            if(result){
+            	$("#ver-code").empty();
+            	$("#ver-code").append('<i class="icon iconfont right">&#xe606;</i>');
+            }else{
+            	$("#ver-code").empty();
+				$("#ver-code").append('<i class="icon iconfont wrong">&#xe607;</i>');
+            }
+        }
+    });
+	});
+    
+	</script>
+</body>
+</html>
