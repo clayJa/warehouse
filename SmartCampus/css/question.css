@@ -55,6 +55,42 @@
 	font-size: 80px;
 	color: white;
 }
+.tech-model {
+	padding: 15px;
+}
+.tech-model li {
+	width: 30%;
+	height: 65px;
+	line-height: 65px;
+}
+.tech-model li a {
+	color: white;
+	text-decoration: none;
+}
+.tech-model li a:hover, .tech-sort li a:hover {
+	text-decoration: none;
+}
+.tech-model li:nth-child(1) {
+	background-color: orange;
+}
+.tech-model li:nth-child(2) {
+	background-color: green;
+}
+.tech-model li:nth-child(3) {
+	background-color: blue;
+}
+.tech-model .iconfont {
+	font-size: 40px;
+	border: 2px solid white;
+	border-radius: 50%;
+	color: white;
+}
+.tech-model>li:nth-child(1) .iconfont {
+	padding: 5px;
+	font-size: 40px;
+	border: 0px solid white;
+	border-radius: 50%;
+}
 .ask .iconfont {
 	border: 2px solid white;
 	border-radius: 50%;
