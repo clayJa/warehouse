@@ -9,19 +9,46 @@
 	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
 </head>
 <body>
+<div class="top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container f21">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">校园虚拟社区</a>
+        <!-- 判断登录状态 -->
+        <!-- 未登录 -->
+        <span class="login-in "><a href="login.html" >登录 </a><i class="icon iconfont">&#xe60c;</i></span>
+        <!-- 已登录 用户名 相关消息数-->
+        <span class="user"><a href="#">用户名</a><a href=""><span class="item">4</span></a><a href="#">登出 </a><i class="icon iconfont">&#xe607;</i></span>
+      </div>
+      <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+          <a href="#technology">技术研讨</a>
+          </li>
+          <li>
+          <a href="#video">精彩视频</a>
+          </li>
+          <li>
+          <a href="#announcement">校园公告</a>
+          </li>
+          <li>
+          <a href="#weibo">趣味微博</a>
+          </li>
+          <li>
+          <a href="#program">创意项目</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
     <div class="container">
-		<div class="user-item">
-		    <!--  未登录 -->
-	    	<span class="login-in"><a href="login.html" class="user">登录 </a><i class="icon iconfont">&#xe60c;</i></span>
-			 <!-- 已登录 用户名 相关消息数 -->
-			<span class="user"><a href="myspace.html">用户名</a><a href=""><span class="item">4</span></a><a href="">登出 </a><i class="icon iconfont">&#xe607;</i></span>
-		</div>
-        <div class="top-bg">
-        	<span class="logo"><i class="icon iconfont">&#xe60d;</i></span>
-        	<h1>技术研讨区</h1>
-        	<span class="phrase">Solve what you doubt,and improve togeter...</span>
-        </div>
-        <hr>
         <div class="row">
             <div class="col-sm-12 col-md-12 text-center f25">
                 <ul class="list-inline tech-model">
@@ -30,7 +57,7 @@
                     <li><a href="answer.html" target="_blank">ANSWER QUESTIONS</a><i class="icon iconfont">&#xe60e;</i></li>
                 </ul>
             </div>  
-	        <h2>Article</h2>
+	        <h2>精品文章</h2>
         	<div class="col-sm-10 col-md-10">
         		<div class="col-sm-5 col-md-5 ask-btn">
         			<a href="ask.html"><i class="icon iconfont">&#xe609;</i> 提问</a>
@@ -51,11 +78,11 @@
                     	</div>
                     	<div class="col-sm-8 col-md-8">
                     		<div class="title">
-                    			<p><a href="#">Building CAML for querying List in SharePoint</a></p>
+                    			<p><a href="p-00001.html" target="_blank">从零开始如何系统学好前端开发基础？</a></p>
                     		</div>
                     		<div class="descript">
-                    			<article>ORMs like Entity Framework have always been shrouded in a bit of controversy from SQL purists who aren't in control of the types of queries that these tools are building behind the scenes. While this is a perfectly valid stance to take, these same tools can often assist in getting</article>
-                    			<p><span class="author">Midi_Mick</span><span class="write-time">19 Oct 2016</span></p>
+                    			<article>web前端开发基础，主要是学html和css。为什么我只讲系统学习基础知识呢，因为我觉得，对于零基础的学员来说，学好了基础知识，就相当于为高楼大厦打下了坚实的地基。系统学习了基础知识，再去学更高级的知识功到自然成。反之，基础没有打牢，再坚固的大厦也屹立不了多久。</article>
+                    			<p><span class="author">Zamrony</span><span class="write-time">19 Oct 2016</span></p>
                     		</div>
                     	</div>
                     	<!-- end of an article,and next... -->
@@ -64,66 +91,66 @@
                     		<img src="http://www.mangrol.com/images/products/writing/online-writing/full%20size/online_article.jpeg" alt="">
                     	</div>
                     	<div class="col-sm-8 col-md-8">
-                    		<div class="title">
-                    			<p><a href="#">Building CAML for querying List in SharePoint</a></p>
-                    		</div>
-                    		<div class="descript">
-                    			<article>ORMs like Entity Framework have always been shrouded in a bit of controversy from SQL purists who aren't in control of the types of queries that these tools are building behind the scenes. While this is a perfectly valid stance to take, these same tools can often assist in getting</article>
-                    			<p><span class="author">Midi_Mick</span><span class="write-time">19 Oct 2016</span></p>
-                    		</div>
-                    	</div>
+                            <div class="title">
+                                <p><a href="p-00001.html" target="_blank">从零开始如何系统学好前端开发基础？</a></p>
+                            </div>
+                            <div class="descript">
+                                <article>web前端开发基础，主要是学html和css。为什么我只讲系统学习基础知识呢，因为我觉得，对于零基础的学员来说，学好了基础知识，就相当于为高楼大厦打下了坚实的地基。系统学习了基础知识，再去学更高级的知识功到自然成。反之，基础没有打牢，再坚固的大厦也屹立不了多久。</article>
+                                <p><span class="author">Zamrony</span><span class="write-time">19 Oct 2016</span></p>
+                            </div>
+                        </div>
                     	<div class="col-sm-2 col-md-2 article-img">
                     	<!-- 文章内插图，或者随机图片 -->
                     		<img src="http://www.mangrol.com/images/products/writing/online-writing/full%20size/online_article.jpeg" alt="">
                     	</div>
                     	<div class="col-sm-8 col-md-8">
-                    		<div class="title">
-                    			<p><a href="#">Building CAML for querying List in SharePoint</a></p>
-                    		</div>
-                    		<div class="descript">
-                    			<article>ORMs like Entity Framework have always been shrouded in a bit of controversy from SQL purists who aren't in control of the types of queries that these tools are building behind the scenes. While this is a perfectly valid stance to take, these same tools can often assist in getting</article>
-                    			<p><span class="author">Midi_Mick</span><span class="write-time">19 Oct 2016</span></p>
-                    		</div>
-                    	</div>
+                            <div class="title">
+                                <p><a hhref="p-00001.html" target="_blank">从零开始如何系统学好前端开发基础？</a></p>
+                            </div>
+                            <div class="descript">
+                                <article>web前端开发基础，主要是学html和css。为什么我只讲系统学习基础知识呢，因为我觉得，对于零基础的学员来说，学好了基础知识，就相当于为高楼大厦打下了坚实的地基。系统学习了基础知识，再去学更高级的知识功到自然成。反之，基础没有打牢，再坚固的大厦也屹立不了多久。</article>
+                                <p><span class="author">Zamrony</span><span class="write-time">19 Oct 2016</span></p>
+                            </div>
+                        </div>
                     	<div class="col-sm-2 col-md-2 article-img">
                     	<!-- 文章内插图，或者随机图片 -->
                     		<img src="http://www.mangrol.com/images/products/writing/online-writing/full%20size/online_article.jpeg" alt="">
                     	</div>
                     	<div class="col-sm-8 col-md-8">
-                    		<div class="title">
-                    			<p><a href="#">Building CAML for querying List in SharePoint</a></p>
-                    		</div>
-                    		<div class="descript">
-                    			<article>ORMs like Entity Framework have always been shrouded in a bit of controversy from SQL purists who aren't in control of the types of queries that these tools are building behind the scenes. While this is a perfectly valid stance to take, these same tools can often assist in getting</article>
-                    			<p><span class="author">Midi_Mick</span><span class="write-time">19 Oct 2016</span></p>
-                    		</div>
-                    	</div>
+                            <div class="title">
+                                <p><a href="p-00001.html" target="_blank">从零开始如何系统学好前端开发基础？</a></p>
+                            </div>
+                            <div class="descript">
+                                <article>web前端开发基础，主要是学html和css。为什么我只讲系统学习基础知识呢，因为我觉得，对于零基础的学员来说，学好了基础知识，就相当于为高楼大厦打下了坚实的地基。系统学习了基础知识，再去学更高级的知识功到自然成。反之，基础没有打牢，再坚固的大厦也屹立不了多久。</article>
+                                <p><span class="author">Zamrony</span><span class="write-time">19 Oct 2016</span></p>
+                            </div>
+                        </div>
                     	<div class="col-sm-2 col-md-2 article-img">
                     	<!-- 文章内插图，或者随机图片 -->
                     		<img src="http://www.mangrol.com/images/products/writing/online-writing/full%20size/online_article.jpeg" alt="">
                     	</div>
                     	<div class="col-sm-8 col-md-8">
-                    		<div class="title">
-                    			<p><a href="#">Building CAML for querying List in SharePoint</a></p>
-                    		</div>
-                    		<div class="descript">
-                    			<article>ORMs like Entity Framework have always been shrouded in a bit of controversy from SQL purists who aren't in control of the types of queries that these tools are building behind the scenes. While this is a perfectly valid stance to take, these same tools can often assist in getting</article>
-                    			<p><span class="author">Midi_Mick</span><span class="write-time">19 Oct 2016</span></p>
-                    		</div>
-                    	</div>
+                            <div class="title">
+                                <p><a href="p-00001.html" target="_blank">从零开始如何系统学好前端开发基础？</a></p>
+                            </div>
+                            <div class="descript">
+                                <article>web前端开发基础，主要是学html和css。为什么我只讲系统学习基础知识呢，因为我觉得，对于零基础的学员来说，学好了基础知识，就相当于为高楼大厦打下了坚实的地基。系统学习了基础知识，再去学更高级的知识功到自然成。反之，基础没有打牢，再坚固的大厦也屹立不了多久。</article>
+                                <p><span class="author">Zamrony</span><span class="write-time">19 Oct 2016</span></p>
+                            </div>
+                        </div>
                     	<div class="col-sm-2 col-md-2 article-img">
                     	<!-- 文章内插图，或者随机图片 -->
                     		<img src="http://www.mangrol.com/images/products/writing/online-writing/full%20size/online_article.jpeg" alt="">
                     	</div>
                     	<div class="col-sm-8 col-md-8">
-                    		<div class="title">
-                    			<p><a href="#">Building CAML for querying List in SharePoint</a></p>
-                    		</div>
-                    		<div class="descript">
-                    			<article>ORMs like Entity Framework have always been shrouded in a bit of controversy from SQL purists who aren't in control of the types of queries that these tools are building behind the scenes. While this is a perfectly valid stance to take, these same tools can often assist in getting</article>
-                    			<p><span class="author">Midi_Mick</span><span class="write-time">19 Oct 2016</span></p>
-                    		</div>
-                    	</div>
+                            <div class="title">
+                                <p><a href="p-00001.html" target="_blank">从零开始如何系统学好前端开发基础？</a></p>
+                            </div>
+                            <div class="descript">
+                                <article>web前端开发基础，主要是学html和css。为什么我只讲系统学习基础知识呢，因为我觉得，对于零基础的学员来说，学好了基础知识，就相当于为高楼大厦打下了坚实的地基。系统学习了基础知识，再去学更高级的知识功到自然成。反之，基础没有打牢，再坚固的大厦也屹立不了多久。</article>
+                                <p><span class="author">Zamrony</span><span class="write-time">19 Oct 2016</span></p>
+                            </div>
+                        </div>
 	                </div>
                 </div>
                 <!-- end of question list -->

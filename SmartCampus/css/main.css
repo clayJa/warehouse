@@ -26,11 +26,65 @@ body, h1, h2, h3, h4, h5, h6, p, a, article {
 li a:hover {
 	text-decoration: none;
 }
+.top {
+	padding-bottom: 50px;
+}
 .top .navbar-inverse {
 	background: -webkit-linear-gradient(rgb(3, 7, 16), rgb(6, 32, 59), rgb(11, 40, 70));
 	background: -o-linear-gradient(rgb(3, 7, 16), rgb(6, 32, 59), rgb(11, 40, 70));
 	background: -moz-linear-gradient(rgb(3, 7, 16), rgb(6, 32, 59), rgb(11, 40, 70));
 	background: linear-gradient(rgb(3, 7, 16), rgb(6, 32, 59), rgb(11, 40, 70));
+}
+navbar-header span {
+	position: relative;
+	top: 5px;
+	left: 40px;
+	font-size: 0.5em;
+}
+.navbar-header span a:nth-child(1):hover {
+	text-decoration: none;
+}
+.navbar-header span .iconfont {
+	font-size: 9px;
+}
+.user, .login-in {
+	font-size: 14px;
+	position: relative;
+	top: 10px;
+}
+.user .item {
+	position: relative;
+	top: 0px;
+	left: 5px;
+	display: inline-block;
+	min-width: 5px;
+	padding: 3px 5px;
+	font-size: 9px;
+	font-weight: bold;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-color: #777;
+	border-radius: 10px;
+}
+.user a:nth-child(3) {
+	position: relative;
+	top: 0px;
+	left: 15px;
+}
+.login-in .iconfont {
+	color: white;
+}
+.user .iconfont {
+	position: relative;
+	top: 0px;
+	left: 15px;
+	font-size: 9px;
+	border: 1px solid white;
+	border-radius: 50%;
+	color: white;
 }
 footer {
 	position: relative;

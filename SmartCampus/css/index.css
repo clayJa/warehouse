@@ -2,52 +2,6 @@ body {
 	height: 100%;
 	width: 100%;
 }
-.navbar-header span {
-	position: relative;
-	top: 5px;
-	left: 40px;
-	font-size: 0.5em;
-}
-.navbar-header span a:nth-child(1):hover {
-	text-decoration: none;
-}
-.navbar-header span .iconfont {
-	font-size: 9px;
-}
-.user .item {
-	position: relative;
-	top: 0px;
-	left: 5px;
-	display: inline-block;
-	min-width: 5px;
-	padding: 3px 5px;
-	font-size: 9px;
-	font-weight: bold;
-	line-height: 1;
-	color: #fff;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	background-color: #777;
-	border-radius: 10px;
-}
-.user a:nth-child(3) {
-	position: relative;
-	top: 0px;
-	left: 15px;
-}
-.login-in .iconfont {
-	color: white;
-}
-.user .iconfont {
-	position: relative;
-	top: 0px;
-	left: 15px;
-	font-size: 9px;
-	border: 1px solid white;
-	border-radius: 50%;
-	color: white;
-}
 #technology, #video, #announcement, #weibo, #program {
 	padding: 50px;
 }
@@ -254,6 +208,9 @@ body {
 }
 .describe .outline {
 	color: #000;
+	line-height: 23px;
+	max-height: 50px;
+	overflow: hidden;
 }
 .article-list {
 	padding-top: 40px;
