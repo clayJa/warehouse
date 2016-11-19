@@ -1,0 +1,87 @@
+.author-info img, .current-user img, .comment-other img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: 10px 20px 0 20px;
+}
+.author-info span {
+	color: #b3cfb3;
+	position: relative;
+	top: 10px;
+	padding-right: 10px;
+}
+.video {
+	padding: 50px;
+}
+.current-user .btn {
+	height: 70px;
+	font-size: 14px;
+}
+#comment_text {
+	background-color: #f4f5f7;
+}
+#comment_text:focus, #comment_text:hover {
+	background-color: #fff;
+}
+.comment {
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 40px;
+}
+.comment-other {
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 20px;
+}
+.comment-other span>a {
+	color: #6d757a;
+	font-size: 14px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.comment-other span>a:hover {
+	color: #00a1d6;
+}
+.comment-content {
+	position: relative;
+	top: -10px;
+	left: 100px;
+}
+.comment-info {
+	color: #aaa;
+	position: relative;
+	left: 100px;
+}
+.comment-info span {
+	padding-right: 20px;
+}
+.other-video {
+	padding-top: 200px;
+}
+.other-video h4 {
+	padding-bottom: 30px;
+}
+.other-video ul {
+	list-style: none;
+}
+.other-video ul li {
+	float: left;
+	padding: 0px 10px 40px 10px;
+	position: relative;
+}
+.other-video ul li img {
+	width: 168px;
+	height: 105px;
+}
+.other-video .img-info {
+	position: absolute;
+	width: 168px;
+	height: 10px;
+	bottom: 25px;
+	left: 5px;
+	color: black;
+	font-size: 8px;
+	font-family: "Microsoft YaHei";
+}
+.img-info:hover {
+	color: #00a1d6;
+	text-decoration: none;
+}

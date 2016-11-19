@@ -7,6 +7,9 @@ body, h1, h2, h3, h4, h5, h6, p, a, article {
 .f15 {
 	font-size: 15px;
 }
+.f18 {
+	font-size: 18px;
+}
 .f21 {
 	font-size: 21px;
 }
@@ -23,7 +26,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, article {
 
 	/*background-color: rgba(247, 247, 245, 0.8);*/
 }
-li a:hover {
+li a:hover, span a:hover, a:hover {
 	text-decoration: none;
 }
 .top {
@@ -135,5 +138,20 @@ footer {
 	line-height: 40px;
 	font-style: normal;
 	color: #999;
+}
+.title-img img {
+	padding-top: 20px;
+}
+.author-info img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: 10px 20px 0 20px;
+}
+.author-info span {
+	color: #b3cfb3;
+	position: relative;
+	top: 10px;
+	padding-right: 10px;
 }
 =
