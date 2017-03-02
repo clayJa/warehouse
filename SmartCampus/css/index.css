@@ -257,6 +257,10 @@ body {
 	overflow: hidden;
 	margin-top: 30px;
 }
+.preview-list img {
+	height: 220px;
+	width: 440px;
+}
 .preview-list ul li {
 	position: absolute;
 	float: left;
@@ -509,4 +513,57 @@ ul, li {
 .og_next {
 	background-position: 0 0;
 	right: 4px;
+}
+
+/*weibo.css*/
+.current-user .btn {
+	height: 70px;
+	font-size: 14px;
+}
+#weibo_text {
+	background-color: #f4f5f7;
+}
+#weibo_text:focus, #weibo_text:hover {
+	background-color: #fff;
+}
+.weibo {
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 40px;
+}
+
+/*.current-user img {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin: 10px 20px 0 20px;
+}*/
+#fileElem {
+	display: none;
+}
+#fileSelect {
+	position: relative;
+	top: 0;
+	left: 50px;
+	cursor: pointer;	/*text-align: center;	border: 1px solid #ccc;*/
+}
+.add-img {
+	display: none;
+	color: gray;
+	font-size: 18px;
+}
+#fileSelect:hover .add-img {
+	display: inline-block;
+}
+#fileSelect .iconfont {
+	font-size: 30px;
+	color: #ccc;
+}
+#preview {
+	position: relative;
+	left: 50px;
+	top: -10px;
+}
+#preview img {
+	width: 45px;
+	height: 45px;
 }

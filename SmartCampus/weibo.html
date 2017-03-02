@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>趣味微博</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/weibo.css">
+  <link rel="stylesheet" type="text/css" href="css/image-hover.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+  </head>
+<body class="bg">
+<div class="top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container f21">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a href="" class="navbar-brand">校园虚拟社区</a>
+        <!-- 判断登录状态 -->
+        <!-- 未登录 -->
+        <span class="login-in "><a href="login.html">登录 </a><i class="icon iconfont">&#xe60c;</i></span>
+        <!-- 已登录 用户名 相关消息数-->
+        <span class="user"><a href="#">用户名</a><a href=""><span class="item">4</span></a><a href="#">登出 </a><i class="icon iconfont">&#xe607;</i></span>
+      </div>
+      <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+          <a href="question.html">技术研讨</a>
+          </li>
+          <li>
+          <a href="video.html">精彩视频</a>
+          </li>
+          <li>
+          <a href="announce.html">校园公告</a>
+          </li>
+          <li>
+          <a href="#">趣味微博</a>
+          </li>
+          <li>
+          <a href="index.html#program">创意项目</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- end of navbar -->
+<div id="weibo">
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <div class="row">
+            <div class="col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1 weibo-list">
+              <div class="comment-video col-sm-12 col-md-12">
+                  <div class="current-user">
+                    <div class="weibo">
+                      <form action="" role="form">
+                        <div class="form-group">
+                            <input type="file" id="fileElem" multiple accept="image/*"  onchange="handleFiles(this.files)">
+                            <div id="fileSelect">
+                            <span id="camera"><i class="icon iconfont">&#xe62b;</i>
+                            <span class="add-img">添加图片</span>
+                            </span>
+                            </div>
+                            <div class="select-img" id="preview">
+                        </div>
+                        <div class="col-sm-11 col-md-11">
+                        <textarea id="weibo_text" class="form-control" cols="80" name="msg" rows="2" placeholder="请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论。"></textarea>
+                        </div>
+                        <button class="btn btn-info submit-comment" type="submit">发布</button>
+                      </div>
+                    </form>
+                  </div>
+              <ul>
+              <!-- list of weibo -->
+                <li class="weibo-desc">
+                  <p class="weibo-content">冠军终归西科！别人在魔兽世界里尽情厮杀时,你们在训练;别人在花前月下你侬我侬时,你们在训练;别人在各大商城血拼“11.11”时,你们在训练;别人在翘首企盼血拼战利品时,你们在等待着检录;别人在收到快递一拆为快时,你们在搏得金牌振臂一吼,冠军终归这里！年复一年的积累,只为今日的凤凰涅槃;阴晴圆缺、寒来暑往,不变的是你们挥汗训练的身影;礼仪廉耻、忍耐克己、百折不屈.你们用行动诠释着跆拳道精神。加油，西科未赢够！</p>
+                  <ul class="img-list">
+                    <li class="pic"><img src="http://ww3.sinaimg.cn/mw690/006CfKhMgw1f9t7lhz744j30k00k9dhz.jpg" alt=""></li>
+                    <li class="pic"><img src="http://ww1.sinaimg.cn/mw690/006CfKhMgw1f9t7ll4e5kj30zj0qothq.jpg" alt=""></li>
+                    <li class="pic"><img src="http://ww2.sinaimg.cn/mw690/006CfKhMgw1f9t7llxpaej30k00f0dhk.jpg" alt=""></li>
+                  </ul>
+                  <div class="clear"></div>
+                  <div class="weibo-info">
+                    <div class="left">
+                      <img src="http://tva3.sinaimg.cn/crop.0.0.996.996.180/006CfKhMjw8f9kqzvs4laj30ro0roacs.jpg" alt="" class="little-head">
+                      <a href="">@西科跆拳道</a>
+                      <span class="time">11月15日 23:31</span>
+                    </div>
+                    <div class="right">
+                      <span class="send"><i class="icon iconfont">&#xe613;</i><span class="send-num">45</span></span>
+                      
+                      <span class="remark"><i class="icon iconfont">&#xe612;</i><span class="remark-num">200</span></span>
+                      <span class="love"><i class="icon iconfont">&#xe610;</i><span class="love-num">300</span></span>
+                    </div>
+                  </div>
+                </li>
+                <li class="weibo-desc">
+                  <p class="weibo-content">冠军终归西科！别人在魔兽世界里尽情厮杀时,你们在训练;别人在花前月下你侬我侬时,你们在训练;别人在各大商城血拼“11.11”时,你们在训练;别人在翘首企盼血拼战利品时,你们在等待着检录;别人在收到快递一拆为快时,你们在搏得金牌振臂一吼,冠军终归这里！年复一年的积累,只为今日的凤凰涅槃;阴晴圆缺、寒来暑往,不变的是你们挥汗训练的身影;礼仪廉耻、忍耐克己、百折不屈.你们用行动诠释着跆拳道精神。加油，西科未赢够！</p>
+                  <ul class="img-list">
+                    <li class="pic"><img src="http://ww3.sinaimg.cn/mw690/006CfKhMgw1f9t7lhz744j30k00k9dhz.jpg" alt=""></li>
+                    <li class="pic"><img src="http://ww1.sinaimg.cn/mw690/006CfKhMgw1f9t7ll4e5kj30zj0qothq.jpg" alt=""></li>
+                    <li class="pic"><img src="http://ww2.sinaimg.cn/mw690/006CfKhMgw1f9t7llxpaej30k00f0dhk.jpg" alt=""></li>
+                  </ul>
+                  <div class="clear"></div>
+                  <div class="weibo-info">
+                    <div class="left">
+                      <img src="http://tva3.sinaimg.cn/crop.0.0.996.996.180/006CfKhMjw8f9kqzvs4laj30ro0roacs.jpg" alt="" class="little-head">
+                      <a href="">@西科跆拳道</a>
+                      <span class="time">11月15日 23:31</span>
+                    </div>
+                    <div class="right">
+                      <span class="send"><i class="icon iconfont">&#xe613;</i><span class="send-num">45</span></span>
+                      
+                      <span class="remark"><i class="icon iconfont">&#xe612;</i><span class="remark-num">200</span></span>
+                      <span class="love"><i class="icon iconfont">&#xe610;</i><span class="love-num">300</span></span>
+                    </div>
+                  </div>  
+                </li>
+                <li class="weibo-desc">
+                  <p class="weibo-content">冠军终归西科！别人在魔兽世界里尽情厮杀时,你们在训练;别人在花前月下你侬我侬时,你们在训练;别人在各大商城血拼“11.11”时,你们在训练;别人在翘首企盼血拼战利品时,你们在等待着检录;别人在收到快递一拆为快时,你们在搏得金牌振臂一吼,冠军终归这里！年复一年的积累,只为今日的凤凰涅槃;阴晴圆缺、寒来暑往,不变的是你们挥汗训练的身影;礼仪廉耻、忍耐克己、百折不屈.你们用行动诠释着跆拳道精神。加油，西科未赢够！</p>
+                  <ul class="img-list">
+                    <li class="pic"><img src="http://ww3.sinaimg.cn/mw690/006CfKhMgw1f9t7lhz744j30k00k9dhz.jpg" alt=""></li>
+                    <li class="pic"><img src="http://ww1.sinaimg.cn/mw690/006CfKhMgw1f9t7ll4e5kj30zj0qothq.jpg" alt=""></li>
+                    <li class="pic"><img src="http://ww2.sinaimg.cn/mw690/006CfKhMgw1f9t7llxpaej30k00f0dhk.jpg" alt=""></li>
+                  </ul>
+                  <div class="clear"></div>
+                  <div class="weibo-info">
+                    <div class="left">
+                      <img src="http://tva3.sinaimg.cn/crop.0.0.996.996.180/006CfKhMjw8f9kqzvs4laj30ro0roacs.jpg" alt="" class="little-head">
+                      <a href="">@西科跆拳道</a>
+                      <span class="time">11月15日 23:31</span>
+                    </div>
+                    <div class="right">
+                      <span class="send"><i class="icon iconfont">&#xe613;</i><span class="send-num">45</span></span>
+                      
+                      <span class="remark"><i class="icon iconfont">&#xe612;</i><span class="remark-num">200</span></span>
+                      <span class="love"><i class="icon iconfont">&#xe610;</i><span class="love-num">300</span></span>
+                    </div>
+                  </div>  
+                </li>
+              </ul>
+            </div>
+            <!-- end if weibo-list -->
+          </div>
+        </div>  
+    </div>
+  </div>
+</div>
+<!-- end of  weibo-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center contact" id="contact">
+        <a href="" target='_blank'><i class="icon iconfont">&#xe600;</i></a>
+        <a href="" target='_blank'><i class="icon iconfont">&#xe601;</i></a>
+        <a href="" target='_blank'><i class="icon iconfont">&#xe602;</i></a>
+                <a href="" target='_blank'><i class="icon iconfont">&#xe603;</i></a>
+                <a href="" target='_blank'><i class="icon iconfont">&#xe605;</i></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 text-center text-muted">
+        <p>Made by Ivan in Shaanxi, China. All text, design and video are copyrighted. Copyright © 2016 SmartCampus.com. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end of footer-->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script>
+    var love = $(".love .iconfont");
+    love.click(function(){
+      $(this).html("&#xe611;");
+      $(this).css("color","#31B0D5");
+      var num = 300;//此处需要当前赞数！！
+      num += 1;
+      $(this).next().html(num);
+
+    });
+  </script>
+  <script type="text/javascript">
+        var fileSelect = document.getElementById("fileSelect"),
+          fileElem = document.getElementById("fileElem");
+
+        fileSelect.addEventListener("click", function (e) {
+          if (fileElem) {
+            fileElem.click();
+          }
+          e.preventDefault(); // prevent navigation to "#"
+        }, false);
+        function handleFiles(files) {
+          for (var i = 0; i < files.length; i++) {
+          var file = files[i];
+          var imageType = /^image\//;
+          
+          if ( !imageType.test(file.type) ) {
+            continue;
+          }
+          
+          var img = document.createElement("img");
+          img.classList.add("obj");
+          img.file = file;
+          // 假设 "preview" 是将要展示图片的 div
+          var preview = document.getElementById('preview');
+          var camera = document.getElementById('camera');
+          var pre_img = preview.getElementsByTagName('img');
+          var img_index = preview.childNodes.length - 1;
+          if (pre_img.length > 0) {
+              preview.removeChild(preview.childNodes[img_index]);
+          }
+          preview.appendChild(img);
+          camera.classList.add("hidden");
+          var reader = new FileReader();
+          reader.onload = (function(aImg) { 
+            return function(e) { 
+              aImg.src = e.target.result; 
+            }; 
+          })(img);
+          reader.readAsDataURL(file);
+  }
+}
+  </script>
+</body>
+</html>

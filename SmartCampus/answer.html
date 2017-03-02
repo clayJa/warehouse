@@ -7,7 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="css/question.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
-  <link rel="stylesheet" type="text/css" href="../dist/css/wangEditor.min.css">
 </head>
 <body>
 <div class="top">
@@ -30,19 +29,19 @@
       <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li>
-          <a href="#technology">技术研讨</a>
+          <a href="question.html">技术研讨</a>
           </li>
           <li>
-          <a href="#video">精彩视频</a>
+          <a href="video.html">精彩视频</a>
           </li>
           <li>
-          <a href="#announcement">校园公告</a>
+          <a href="announce.html">校园公告</a>
           </li>
           <li>
-          <a href="#weibo">趣味微博</a>
+          <a href="weibo.html">趣味微博</a>
           </li>
           <li>
-          <a href="#program">创意项目</a>
+          <a href="index.html#program">创意项目</a>
           </li>
         </ul>
       </div>
@@ -103,10 +102,10 @@
                         <!-- 回答者简介或签名 -->
                    			<span>a Front-end rookie on the way</span></p>
                         <p>
-                        <span class="dislike"><a href=""><i class="icon iconfont">&#xe610;</i></a></span>
-                        <span class="like"><a href=""><i class="icon iconfont">&#xe611;</i></a></span>
-                        <!-- 赞同数 -->
+                        <span class="dislike"><i class="icon iconfont">&#xe610;</i><!-- 赞同数 -->
                         <span> 534</span>
+                        </span>
+                        
                         </p>
                    		</div>
                       <div class="ans-content">
@@ -143,10 +142,10 @@
                         <!-- 回答者简介或签名 -->
                         <span>a Front-end rookie on the way</span></p>
                         <p>
-                        <span class="dislike"><a href=""><i class="icon iconfont">&#xe610;</i></a></span>
-                        <span class="like"><a href=""><i class="icon iconfont">&#xe611;</i></a></span>
+                        <span class="dislike"><i class="icon iconfont">&#xe610;</i>
                         <!-- 赞同数 -->
                         <span> 534</span>
+                        </span>
                         </p>
                       </div>
                       <div class="ans-content">
@@ -232,10 +231,26 @@
 
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="../dist/js/wangEditor.min.js"></script>
   <script type="text/javascript">
       var editor = new wangEditor('ans-content');
       editor.create();
+  </script>
+  <!-- <script>
+    $(".dislike iconfont").click(function(){
+      $(this).next().show();
+      $(this).hide();
+    });
+  </script> -->
+   <script>
+    var love = $(".dislike .iconfont");
+    love.click(function(){
+      $(this).html("&#xe611;");
+      $(this).css("color","#ff4500");
+      var num = 300;//此处需要当前赞数！！
+      num += 1;
+      $(this).next().html(num);
+
+    });
   </script>
 </body>
 </html>

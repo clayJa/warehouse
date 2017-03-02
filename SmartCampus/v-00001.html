@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="css/video-js.css">
 </head>
 <body>
-<div class="top">
+<div class="top"> 
     <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container f21">
       <div class="navbar-header">
@@ -30,19 +30,19 @@
       <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li>
-          <a href="#technology">技术研讨</a>
+          <a href="question.html">技术研讨</a>
           </li>
           <li>
-          <a href="#video">精彩视频</a>
+          <a href="video.html">精彩视频</a>
           </li>
           <li>
-          <a href="#announcement">校园公告</a>
+          <a href="announce.html">校园公告</a>
           </li>
           <li>
-          <a href="#weibo">趣味微博</a>
+          <a href="weibo.html">趣味微博</a>
           </li>
           <li>
-          <a href="#program">创意项目</a>
+          <a href="index.html#program">创意项目</a>
           </li>
         </ul>
       </div>
@@ -173,5 +173,16 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
   <script src="js/video.js"></script>
+  <script>
+    var love = $(".love .iconfont");
+    love.click(function(){
+      $(this).html("&#xe611;");
+      $(this).css("color","#31B0D5");
+      var num = 300;//此处需要当前赞数！！
+      num += 1;
+      $(this).next().html(num);
+
+    });
+  </script>
 </body>
 </html>
